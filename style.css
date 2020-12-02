@@ -149,6 +149,7 @@ float: right;
 .modal-cross{
   position: relative;
   top:13px;
+  padding: 1px;
 }
 
 .modal h2{
