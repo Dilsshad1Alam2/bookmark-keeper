@@ -193,6 +193,25 @@ filter: brightness(110%);
   
 }
 
+.footer{
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  width: 100vw;
+}
+
+
+.footer a:link,
+.footer a:visited{
+text-decoration:none;
+color: #312e2e;
+text-decoration:underline;
+}
+
+.footer a:hover,
+.footer a:active{
+
+}
 
 
 /* Media Query */
