@@ -139,7 +139,7 @@ float: right;
 }
 
 .modal .form-input{
-  width: 450px;
+  width: 95%;
 }
 
 .modal .form-group{
@@ -196,9 +196,12 @@ filter: brightness(110%);
 
 
 /* Media Query */
-@media screen and (max-width:600px){
-  .bookmark-container{
-    flex-direction: column;
+
+
+@media screen and (max-width:900px){
+
+  .modal{
+    width: 400px;
   }
 
   .show-modal{
@@ -218,6 +221,17 @@ filter: brightness(110%);
 
   .name{
     padding-top: 1px;
+  }
+}
+  
+
+@media screen and (max-width:550px){
+  .bookmark-container{
+    flex-direction: column;
+  }
+
+  .modal{
+    width: 95%;
   }
 
 
