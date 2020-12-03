@@ -7,7 +7,11 @@ const bookmarkForm = document.querySelector(".bookmark-form");
 const modalCross = document.querySelector(".modal-cross");
 const bookmarksContainer  = document.querySelector('.bookmark-container')
 
+const deleteButton = document.querySelector('.delete-button')
+
+
 let bookmarks = [];
+
 
 //To show the modal after clicking add bookmarks
 
@@ -154,4 +158,12 @@ window.addEventListener("click", removeClassOnOutsideClick);
 bookmarkForm.addEventListener("submit", storeBookmark);
 fetchBookmarks();
 
+
+function toclearAllBookmarks(){
+  bookmarksContainer.textContent = '';
+  localStorage.clear();
+  bookmarks = [];
+}
+
+deleteButton.addEventListener('click', toclearAllBookmarks);
 

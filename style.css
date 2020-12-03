@@ -208,10 +208,30 @@ color: #312e2e;
 text-decoration:underline;
 }
 
-.footer a:hover,
-.footer a:active{
-
+.delete-button{
+  z-index: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  outline: none;
+  background: rgb(246, 40, 40);
+  padding: 0.5rem 1rem;
+  color:  rgb(241, 229, 229);
+  font-size: 0.9rem;
+  border-radius: 10px;
 }
+
+.delete-button:hover{
+  cursor: pointer;
+  filter: brightness(80%);
+  color: white;
+}
+
+.delete-button:active{
+  transform: scale(0.99);
+}
+
 
 
 /* Media Query */
@@ -241,7 +261,14 @@ text-decoration:underline;
   .name{
     padding-top: 1px;
   }
+
+  .delete-button{
+    bottom: 70px;
+  }
+
 }
+
+
   
 
 @media screen and (max-width:550px){
